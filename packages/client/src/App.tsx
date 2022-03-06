@@ -38,18 +38,21 @@ const AppContent = () => {
           type="text"
           value={user}
           onChange={(e) => setUser(e.target.value)}
-          className="p-5 border-2 border-gray-300 rounded-lg w-full"
+          className="shadow-md p-5 border-2 border-gray-300 rounded-lg w-full"
           placeholder="User"
         />
         <input
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="p-5 mt-5 border-2 border-gray-300 rounded-lg w-full"
+          className=" shadow-md p-5 mt-5 border-2 border-gray-300 rounded-lg w-full"
           placeholder="Message"
         />
       </div>
-      <button className="p-5 rounded-lg border-2 border-black" onClick={onAdd}>
+      <button
+        className="bg-sky-500/100 shadow-md mt-5 p-5 rounded-lg border-2 border-black"
+        onClick={onAdd}
+      >
         Add message
       </button>
     </div>
